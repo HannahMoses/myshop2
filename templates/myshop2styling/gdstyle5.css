@@ -1,0 +1,1999 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+.msg {
+	    width: 639px;
+    height: 43px;
+    font-family: Lato;
+    color: #404040;
+    font-size: 20px;
+    font-weight: 500;
+    /* text-align: left; */
+    float: left;
+    line-height: 28px;
+    margin-top: 180px;
+    margin-left: 8%;
+    text-indent: 10px;
+}
+
+.error {
+	    width: 90%;
+    height: 472px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_error_new.png) no-repeat;
+    margin: auto;
+}
+.snap {
+	font-family: Lato;
+    color: #404040;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.align {
+	float: left;
+    margin-left: 30%;
+    margin-top: 30px;
+}
+
+
+/* Nested Columns
+---------------------------------------------*/
+.column.full { width: 100%; }
+.column.three-quarters{ width: 100%; }
+.column.two-thirds { width: 66.7%; }
+.column.half { width: 50%; }
+.column.third { width: 33.3%; }
+.column.fourth { width: 25%; }
+.column.flow-opposite { float: right; }
+
+.column .column.half:first-child {
+	padding-left:0;
+}
+.column .column.half:first-child {
+	padding-right:0;
+}
+
+.column{
+	float:left;
+}
+
+.column.first{ width:41%; }
+	.column.first label{ margin-right:0; }
+.column.second{ width:29%; }
+.column.tres{ width:30%; }
+.column.third.privacy {
+    display: none;
+}
+/*Root and Body
+-----------------------------------------------------*/
+html{
+	height:100%;
+}
+body{
+	font-family:'Lato';
+	font-size:14px;
+	line-height:20px;
+	letter-spacing:.55px;
+	color:#575757;
+	height:100%;
+}
+a{
+	color:#006a52;
+	text-decoration:none;
+}
+	a:hover{
+		color:#f8971d;
+	}
+span a{
+	color:#fff;
+}
+h1{
+	font-size:28px;
+	line-height:35px;
+	color:#006c56;
+	text-align:center;
+	font-weight:500;
+	margin:35px 0 19px 0;
+}
+	h1 p{
+		font-size:11px;
+		line-height:11px;
+		padding:8px 0 10px 0;
+	}
+h2{
+	color:#006c56;
+	text-align:center;
+	margin-bottom:50px;
+	margin-top:35px;
+}
+h3{
+	color:#006c56;
+	text-transform:uppercase;
+	font-size:18px;
+	margin-bottom:17px;
+}
+sup{
+	font-size:12px;
+}
+.desktop, .tablet, .ipad, .wide-screen{
+	display:none;
+}
+.mobile{
+	display:block;
+}
+.clear{
+	clear:both;
+}
+.inline{
+	display:inline;
+}
+.nowrap{
+	white-space:nowrap;
+}
+.antispam{
+	display:none;
+}
+.row{
+	border-bottom:1px solid #575757;
+}
+.inner-button{
+	display:block;
+	text-decoration:none;
+	margin-top:27px;
+	padding:11px 32px;
+	border-radius:15px;
+	background:#f8971d;
+	color:#fff;
+	text-align:center;
+}
+	.inner-button:hover{
+		background:#ffbb65;
+		color:#fff;
+	}
+.warning, p.warning, #banner p.warning{
+	color:#575757;
+	font-size:14px;
+}
+.small{
+	font-size:10px;
+}
+.no-padding, #reviews a.no-padding{
+	padding:0;
+}
+.fixed{
+	display:block;
+	position:fixed;
+	top:0;
+}
+.split{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+.service-head{
+	margin-bottom:8px;
+	font-weight:bold;
+}
+#sticky{
+	display:none;
+	height:58px;
+}
+#b2t{
+	display:none;
+	position:fixed;
+	right:0;
+	bottom:5px;
+	width:47px;
+	height:47px;
+	z-index:99;
+}
+	#b2t a{
+		display:block;
+		background:url(images/css/b2t.jpg);
+		width:47px;
+		height:47px;
+	}
+#content{
+	width:90%;
+	margin:auto;
+	margin-bottom:50px;
+}
+.sitemap ul{
+	margin-left:25px;
+}
+	@media screen and (min-width:600px){
+		h2{
+			font-size:28px;
+		}
+		img{
+			max-width:100%;
+		}
+	}
+
+/*Header
+----------------------------------------------------*/
+header{
+	position:relative;
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+	height:53px;
+	padding-top:17px;
+	line-height:32px;
+}
+header .mobile{
+	display:none;
+}
+header img{
+	float:left;
+	max-width:200px;
+}
+header ul{
+	float:right;
+}
+	header li{
+		display:inline;
+		margin-left:40px;
+	}
+	header li:first-of-type{
+		margin:0;
+	}
+header a{
+	color:#575757;
+	text-decoration:none;
+	font-size:16px;
+}
+	header a:hover{
+		color:#007161;
+		padding-bottom:5px;
+		border-bottom:2px solid #007161;
+	}
+#mobile-menu{
+	display:none;
+	position:absolute;
+	width:100%;
+	top:74px;
+	z-index:99;
+}
+	header a{
+		font-size:16px;
+	}
+	header li{
+		margin-left:30px;
+	}
+@media screen and (max-width:1100px){
+	header li{
+		margin-left:20px;
+	}
+}
+@media screen and (max-width:1000px){
+
+	header a{
+		font-size:14px;
+	}
+}
+@media screen and (max-width:899px){
+	.menu-main-header-container{
+		display:none;
+	}
+	#mobile-menu-container{
+		display:block;
+		position:absolute;
+		right:0;
+		color:#006c56;
+		font-size:18px;
+		text-align:right;
+		line-height:32px;
+		cursor:pointer;
+		z-index:99;
+	}
+		#mobile-menu-container img{
+			float:right;
+			margin:7px 0 0 5px;
+			width:auto;
+		}
+		#mobile-menu-container p{
+			float:left;
+		}
+			#mobile-menu ul{
+				float:none;
+				width:100%;
+				padding-bottom:11px;
+				background:#006a52;
+			}
+			#mobile-menu li{
+				display:block;
+				margin:0;
+				width:100%;
+			}
+			#mobile-menu a{
+				display:block;
+				background:#006a52;
+				color:#fff;
+				font-size:17px;
+				line-height:44px;
+				width:100%;
+				padding-right:5.5%;
+				text-align:right;
+			}
+				#mobile-menu a:hover{
+					background:#034638;
+				}
+}
+
+@media screen and (max-width:350px){
+	header{
+		height:48px;
+	}
+	header img{
+		width:205px;
+	}
+}
+/*Request Form
+-----------------------------------------------------*/
+#mobile-dropdown-form{
+	position:absolute;
+	top:123px;
+	margin-left:0;
+	z-index:65;
+	width:100%;
+	display:none;
+}
+	.inline-block-center #mobile-dropdown-form{
+		width:100%;
+		margin:0;
+	}
+	#appointment-office-info{
+		background:#e58616;
+		text-align:center;
+		padding:25px;
+	}
+		#appointment-office-info a{
+			display:block;
+			color:#fff;
+			text-decoration:none;
+			font-size:16px;
+			line-height:32px;
+		}
+		#appointment-office-info p:first-of-type{
+			margin-bottom:7px;
+		}
+	.form-wrapper{
+		padding: 0 17px 25px 17px;
+		background:#f8971d;
+	}
+	.form-section{
+		padding-top:25px;
+		text-align:left;
+	}
+		.form-section:last-of-type{
+			padding-bottom:25px;
+		}
+	.form-wrapper .column{
+		background:none;
+		margin:0;
+	}
+	label {
+		font-size:15px;
+		line-height:21px;
+		margin-right:15px;
+		color:#fff;
+	}
+	input[type="textbox"], input[type="tel"], input[type="email"]{
+		display:block;
+		width:100%;
+		color:#575757;
+		font-size:14px;
+		font-family:'Lato';
+		letter-spacing:.55px;
+		padding:2px;
+		border:none;
+	}
+	input[type="radio"]{
+		display:none;
+	}
+		input[type="radio"]:last-of-type + label{
+			margin-right:0;
+		}
+	input:checked + label div{
+		background:url(images/css/box-checked.png);
+		background-size:15px 15px;
+	}
+	label div{
+		display:inline-block;
+		background:url(images/css/box-unchecked.png);
+		width:15px;
+		height:15px;
+	}
+		label div:hover{
+			background:url(images/css/box-hover.png);
+		}
+		label[for="age"]{
+			display:block;
+		}
+	textarea{
+		width:100%;
+		height:63px;
+		color:#575757;
+		font-family: 'Lato';
+		letter-spacing:.55px;
+	}
+	#appointment input[type="submit"]{
+		border:none;
+		background:url(images/css/submit-form.png) left 31px top no-repeat, #f8971d;
+		color:#fff;
+		font-family:'Lato';
+		font-size:14px;
+		letter-spacing:.55px;
+		float:right;
+		padding: 5px 38px 19px 81px;
+		border-radius: 0 0 15px 15px;
+	}
+		#appointment input[type="submit"]:hover{
+			text-decoration:underline;
+			cursor:pointer;
+		}
+select{
+	display:block;
+	width:100%;
+	min-height:22px;
+	color:#575757;
+	font-family:'Lato';
+	letter-spacing:.55px;
+	border:0;
+	padding:1px;
+	font-size:14px;
+}
+	.form-section select{
+		height:22px;
+	}
+	option{
+		color:#575757;
+		font-family:'Lato';
+		letter-spacing:.55px;
+	}
+.ui-datepicker{
+	display:none;
+	background:#fff;
+	padding:15px;
+	border:solid 1px #c2c2c2;
+	border-top:0;
+	box-shadow:0 0 5px #c2c2c2;
+	z-index:77 !important;
+}
+	.ui-datepicker-title{
+		text-align:center;
+	}
+		.ui-datepicker-month{
+			font-weight:700;
+		}
+	.ui-datepicker-calendar thead{
+		color:#bbbbbb;
+	}
+	.ui-datepicker-prev span, .ui-datepicker-next span{
+		display:none;
+	}
+		.ui-datepicker-next{
+			float:right;
+			height:20px;
+			width:20px;
+			background:url(images/css/carousel-right.png) no-repeat;
+			cursor:pointer;
+		}
+		.ui-datepicker-prev{
+			display:inline-block;
+			height:20px;
+			width:20px;
+			background:url(images/css/carousel-left.png) no-repeat;
+			cursor:pointer;
+		}
+	.ui-datepicker-calendar tbody td{
+		background:#f5f5f5;
+		text-align:center;
+		padding:3px;
+	}
+		.ui-datepicker-calendar tbody td:hover{
+			color:#575757;
+			background:#f8971d;
+		}
+			.ui-datepicker-calendar tbody td:hover a{
+				color:#fff;
+			}
+		.ui-datepicker-calendar tbody a{
+			color:#575757;
+		}
+			.ui-datepicker-calendar tbody a:hover{
+				color:#fff;
+			}
+
+
+@media screen and (min-width:400px){
+	#mobile-dropdown-form{
+		width:100%;
+		margin-left:0%;
+	}.form-wrapper {
+		padding: 0 25px 25px 25px;
+	}
+	header img{
+		float:left;
+		max-width:275px;
+		width:60%;
+	}
+}
+@media screen and (min-width:600px){
+	#mobile-dropdown-form{
+		top:180px;
+		width:89%;
+	}
+		#mobile-dropdown-form h3{
+			margin-top:0;
+		}
+	#appointment-office-info li:last-of-type{
+		margin-left:5%;
+	}
+	.form-wrapper .column.half{
+		width:47.5%;
+	}
+		.form-wrapper .column.half:first-of-type{
+			margin-right:5%;
+		}
+	.form-section:last-of-type{
+		padding-bottom:0;
+	}
+	label div{
+		width:13px;
+		height:13px;
+	}
+		label[for="patientType"], label[for="age"]{
+			display:inline;
+		}
+	input:checked + label div{
+		background:url(images/css/box-checked.png);
+		background-size:13px 13px;
+	}
+	textarea{
+		height:200px;
+	}
+}
+
+@media screen and (min-width:768px){
+
+	.column.three-quarters{ width: 75%; }
+	#banner #appointment-office-info li{
+		padding-left:0;
+		background:none;
+		width:47.5%;
+	}
+	#mobile-dropdown-form{
+		top:234px;
+	}
+}
+@media screen and (min-width:900px){
+
+.column.three-quarters{ width: 75%; }
+	#banner #appointment-office-info li{
+		width:38.5%;
+	}
+	#appointment-office-info li:last-of-type{
+		margin-left:10%;
+	}
+	.form-section{
+		width:31%;
+		margin-right:4%;
+		float:left;
+	}
+		.form-section:nth-of-type(odd){
+			margin-right:3%;
+		}
+		.form-section:nth-of-type(3){
+			margin-right:0;
+		}
+	.form-section:nth-of-type(4){
+		float:right;
+		margin-right:0;
+	}
+	label{
+		font-size:14px;
+	}
+	select{
+		padding:1.1px;
+	}
+	#appointment textarea{
+		height:180px;
+	}
+}
+/*Banner and Breadcrumb
+----------------------------------------------------*/
+#mobile-request{
+	position:relative;
+	background:#006c56;
+	text-align:center;
+	margin-top:18px;
+}
+	#open-request-button{
+		display:none;
+		background:#e58616;
+	}
+	.btn{
+		display:inline-block;
+		font-size:17px;
+		font-weight:700;
+		color:#fff;
+		background:#f8971d;
+		padding:17px 32px;
+		border-radius:10px;
+		margin:15px;
+		cursor:pointer;
+	}
+		.btn:hover{
+			background:#ffbb65;
+		}
+.onClick{
+	background:#e58616;
+}
+	.onClick:hover{
+		background:#e58616;
+	}
+#mobile-breadcrumb{
+	background:#e5e5e5;
+	padding: 16px 0;
+}
+	#mobile-breadcrumb div{
+		max-width:310px;
+		padding:8px 0;
+		margin:9px auto;
+		background:#fff;
+		color:#006c56;
+		cursor:pointer;
+	}
+		#mobile-breadcrumb div:first-of-type{
+			background:url(images/css/locate_arrow.png) 20px 9px no-repeat, #fff;
+		}
+			#mobile-breadcrumb div:first-of-type p{
+				padding-left:50px;
+			}
+		#mobile-breadcrumb div:last-of-type{
+			background:url(images/css/drop-down-green.png) right 30px top 11px no-repeat, #fff;
+			background-size:11px 9px;
+		}
+			#mobile-breadcrumb div:last-of-type p{
+				padding-left:42px;
+			}
+#mobile-office-info-wrapper{
+	display:none;
+	background:#e5e5e5;
+	color:#006c56;
+}
+#mobile-office-info{
+	width:306px;
+	margin:auto;
+	padding-bottom:25px;
+}
+	#mobile-office-info h3{
+		text-transform:none;
+		font-size:20px;
+	}
+	#mobile-office-info a{
+		margin-bottom:25px;
+		text-decoration:none;
+		display:block;
+	}
+		#mobile-office-info a.oname,#mobile-office-info a.oname:first-of-type{
+			margin-bottom:0;
+			font-size:14px;
+			display:inline;
+		}
+		#mobile-office-info a:first-of-type{
+			font-size:20px;
+		}
+		#mobile-office-info a:last-of-type{
+			font-size:14px;
+		}
+#mobile-breadcrumb #mobile-zip{
+	max-width:310px;
+	margin:auto;
+	color:#006c56;
+}
+#locDropdown{
+	display:none;
+	padding:0 28px 21px 28px;
+	position:absolute;
+	top:32px;
+	left:0;
+	width:100%;
+	background:#fff;
+	box-shadow:0 8px 5px #999;
+	z-index:80;
+}
+	#locDropdown #sortedLocs div, #mobile-office-info #sortedLocs div{
+		color:#575757;
+		margin-bottom:26px;
+		width:60%;
+		height:54px;
+		float:left;
+	}
+		#locDropdown #sortedLocs div:nth-of-type(even){
+			text-align:center;
+			width:40%;
+		}
+		#mobile-office-info #sortedLocs div:nth-of-type(even){
+			text-align:right;
+			width:40%;
+		}
+	#locDropdown h3,#tablet-office-info h3{
+		color:#f8971d;
+		text-transform:none;
+		font-size:20px;
+	}
+	#locDropdown a{
+		color:#575757;
+		font-size:18px;
+		line-height:24px;
+	}
+		#locDropdown a:hover{
+			color:#0f6a54;
+		}
+		#locDropdown a.num{
+			color:#575757;
+			text-decoration:underline;
+			font-size:14px;
+			line-height:auto;
+		}
+	#locDropdown .inner-button, #mobile-office-info .inner-button{
+		color:#fff;
+		clear:both;
+	}
+		#locDropdown .inner-button:hover, #mobile-office-info .inner-button:hover{
+			color:#fff;
+		}
+#zip input[type="textbox"], #mobile-zip input[type="textbox"]{
+	display:inline;
+	width:76%;
+	background:#fff;
+	color:#006c56;
+	line-height:32px;
+	height:32px;
+	padding:0 0 0 42px;
+	border:0;
+}
+	#zip input[type="textbox"]::-webkit-input-placeholder,#mobile-zip input[type="textbox"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color:#006c56;
+	}
+	#zip input[type="textbox"]::-moz-placeholder,#mobile-zip input[type="textbox"]::-moz-placeholder { /* Firefox 19+ */
+	  color:#006c56;
+	}
+	#zip input[type="textbox"]:-ms-input-placeholder,#mobile-zip input[type="textbox"]:-ms-input-placeholder { /* IE 10+ */
+	  color:#006c56;
+	}
+	#zip input[type="textbox"]:-moz-placeholder,#mobile-zip input[type="textbox"]:-moz-placeholder { /* Firefox 18- */
+	  color:#006c56;
+	}
+	#zip input[type="textbox"]:hover,#mobile-zip input[type="textbox"]:hover{
+		color:#f8971d;
+	}
+#mobile-zip input[type="image"]{
+	float:right;
+}
+#zip input[type="submit"],#mobile-zip input[type="submit"]{
+	background:url(images/css/search-submit.jpg);
+	width:33px;
+	height:32px;
+	border:none;
+	float:right;
+}
+	#zip input[type="submit"]:hover, #mobile-zip input[type="submit"]:hover{
+		background:url(images/css/search-submit-hover.jpg);
+		  color:#f8971d;
+	}
+		#zip input[type="textbox"]:hover::-webkit-input-placeholder,#mobile-zip input[type="textbox"]:hover::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color:#f8971d;
+		}
+		#zip input[type="textbox"]:focus::-moz-placeholder,#mobile-zip input[type="textbox"]:focus::-moz-placeholder { /* Firefox 19+ */
+		  color:#f8971d;
+		}
+		#zip input[type="textbox"]:focus:-ms-input-placeholder,#mobile-zip input[type="textbox"]:focus:-ms-input-placeholder { /* IE 10+ */
+		  color:#f8971d;
+		}
+		#zip input[type="textbox"]:focus:-moz-placeholder,#mobile-zip input[type="textbox"]:focus:-moz-placeholder { /* Firefox 18- */
+		  color:#f8971d;
+		}
+
+@media screen and (min-width:320px) and (max-width:399px){
+
+#content{
+	height: auto;
+}
+
+.msg {            width: 276px;
+    height: 68px;
+    font-family: Lato;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    float: left;
+    line-height: 20px;
+    margin-top: 180px;
+    margin-left: 3%;
+    text-indent: 10px;
+}
+
+.error {
+	            width: 100%;
+    height: 375px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_Error_Page_320.png) no-repeat;
+}
+.snap1 {
+	    display: block;
+	    font-family: Lato;
+    color: #404040;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.snap{
+display:none;
+}
+
+.align {
+	   float: left;
+    margin-left: 18%;
+    margin-top: 10px;
+}
+}
+@media screen and (min-width:400px){
+
+.msg {            width: 359px;
+    height: 52px;
+    font-family: Lato;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    float: left;
+    line-height: 20px;
+    margin-top: 185px;
+    margin-left: 0;
+    /* margin-right: 10px; */
+    text-indent: 10px;
+}
+
+.error {
+	            width: 100%;
+    height: 364px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_Error_Page_400.png) center no-repeat;
+}
+.snap1 {
+	    display: block;
+	    font-family: Lato;
+    color: #404040;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.snap{
+display:none;
+}
+
+.align {
+	    float: left;
+    margin-left: 23%;
+    margin-top: 40px;
+}
+	#mobile-zip input[type="textbox"]{
+		width:80%;
+	}
+}
+
+@media screen and (min-width:490px){
+
+.msg {            width: 400px;
+    height: 52px;
+    font-family: Lato;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    float: left;
+    line-height: 20px;
+    margin-top: 185px;
+    margin-left:5%;
+    margin-right: 5%;
+    text-indent: 10px;
+}
+}
+@media screen and (min-width:600px){
+
+.snap1{
+display:none;
+}
+.msg {
+	        width: 494px;
+    height: 33px;
+    font-family: Lato;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 600;
+    /* text-align: left; */
+    float: left;
+    line-height: 20px;
+    margin-top: 140px;
+    margin-left: 10%;
+    text-indent: 10px;
+}
+
+.error {    height: 364px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_Error_Page_600.png) center no-repeat;
+}
+.snap {
+	display:block;
+	    font-family: Lato;
+    color: #404040;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.align {
+	        float: left;
+    margin-left: 25%;
+    margin-top: 55px;
+}
+	.mobile{
+		display:none;
+	}
+	.tablet{
+		display:block;
+	}
+		span.tablet{
+			display:inline;
+		}
+	#mobile-dropdown-form{
+		top:74px;
+		width:95%;
+		margin-left:2.5%;
+	}
+		#appointment-office-info{
+			padding:16px 14px;
+			text-align:right;
+		}
+			#appointment-office-info a,#appointment-office-info span{
+				font-size:14px;
+				display:inline;
+				color:#fff;
+				line-height:32px;
+			}
+			#appointment-office-info span{
+				float:left;
+				font-size:16.5px;
+			}
+			#appointment-office-info a:last-of-type{
+				margin-left:15px;
+			}
+		label{
+			font-size:14px;
+		}
+		label[for='age']{
+			margin-top:15px;
+		}
+
+
+
+	#content, header{
+		width:89%;
+		margin:auto;
+	}
+	#content{
+		margin-bottom:50px;
+	}
+	#banner-wrapper{
+		position:relative;
+		width:100%;
+		border-top:4px solid #006a52;
+		background:#f1fafe;
+		margin-top:17px;
+	}
+		#banner{
+			width:89%;
+			margin:auto;
+		}
+			#request{
+				position:absolute;
+				color:#fff;
+				font-size:18px;
+				padding:9px 31px 15px;
+				border-radius:0 0 16px 16px;
+				margin:0;
+				z-index:50;
+			}
+	#breadcrumb-wrapper{
+		background:#e5e5e5;
+	}
+		#breadcrumb{
+			position:relative;
+			width:89%;
+			margin:auto;
+		}
+		#bc3{
+			position:relative;
+			float:left;
+			width:57%;
+			min-height:32px;
+			background:url(images/css/my_loc.png) 10px center no-repeat, url(images/css/drop-down-orange.png) no-repeat right 15px center, #fff;
+			background-size:16px 22px, 11px 9px;
+			color:#f8971d;
+			margin: 8px 0;
+			padding:6px 9px 6px 35px;
+		}
+			#bc3.noBackground{
+				background:#fff;
+				padding:0;
+			}
+			.wpsl-phone{
+				float:right;
+				text-decoration:underline;
+			}
+			#tablet-office-info{
+				display:none;
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				padding:9px 22px 9px 22px;
+				background:#fff;
+				box-shadow:0 5px 5px #999;
+				color:#f8971d;
+			}
+				#tablet-office-info a{
+					padding:7px 0 10px;
+					color:#f8971d;
+					display:block;
+					text-decoration:none;
+				}
+		#breadcrumb form{
+			display:inline;
+		}
+	#zip input[type="textbox"], #mobile-zip input[type="textbox"]{
+		display:inline;
+		width:28.3%;
+		color:#006c56;
+		padding:0 5px;
+		margin:8px 4px 8px 1.1%;
+		border:0;
+		float:left;
+	}
+	#zip input[type="image"]{
+		margin-top:7px;
+	}
+	#zip input[type="submit"],#mobile-zip input[type="submit"]{
+		background:url(images/css/search-submit.jpg);
+		width:33px;
+		height:32px;
+		border:none;
+		margin-top:8px;
+		float:left;
+	}
+}
+
+@media screen and (min-width:768px){
+
+.snap1{
+display:none;
+}
+	.msg {
+	        width: 494px;
+    height: 33px;
+    font-family: Lato;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 600;
+    /* text-align: left; */
+    float: left;
+    line-height: 20px;
+    margin-top: 140px;
+    margin-left: 10%;
+    text-indent: 10px;
+}
+
+.error {
+	        width: 100%;
+    height: 364px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_Error_Page_900.png) center no-repeat;
+    margin: 0 1%;
+}
+.snap {
+	display:block;
+	    font-family: Lato;
+    color: #404040;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.align {
+	    float: left;
+    margin-left: 33%;
+    margin-top: 40px;
+}
+}
+
+@media screen and (min-width:900px){
+.snap1{
+display:none;
+}
+	.msg {
+	        width: 494px;
+    height: 33px;
+    font-family: Lato;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 600;
+    /* text-align: left; */
+    float: left;
+    line-height: 20px;
+    margin-top: 140px;
+    margin-left: 10%;
+    text-indent: 10px;
+}
+
+.error {
+	        width: 90%;
+    height: 364px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_Error_Page_900.png) center no-repeat;
+    margin: 0 6%;
+}
+.snap {
+	display:block;
+	    font-family: Lato;
+    color: #404040;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.align {
+	    float: left;
+    margin-left: 33%;
+    margin-top: 40px;
+}
+	#banner, #breadcrumb, #content{
+		width:90%;
+		max-width:1000px;
+	}
+	.tablet{
+		display:none;
+	}
+	.ipad{
+		display:none;
+	}
+	.desktop{
+		display:block;
+	}
+		span.desktop{
+			display:inline;
+		}
+	.breadcrumb-tile{
+		background:#fff;
+		text-align:center;
+		float:left;
+		margin: 8px 1.1% 8px 0;
+		padding:6px 9px 6px 9px;
+		color:#006c56;
+	}
+	#bc2{
+		padding:6px 36px 6px 36px;
+	}
+	#bc3{
+		width:39%;
+		padding:6px 9px 6px 35px;
+		text-align:left;
+		margin: 8px 0 8px 0;
+	}
+		#zip input[type="textbox"],#mobile-zip input[type="textbox"]{
+			width:17%;
+		}
+}
+@media screen and (min-width:1100px){
+.snap1{
+display:none;
+}
+	#mobile-dropdown-form{
+		left:50%;
+		margin-left:-500px;
+		max-width:1000px
+	}
+	.wide-screen{
+		display:block;
+	}
+	#bc3{
+		width:44.75%;
+	}
+	#zip input[type="textbox"],#mobile-zip input[type="textbox"]{
+		width:19%;
+	}
+}
+
+@media screen and (min-width:1200px){
+.snap1{
+display:none;
+}
+	#bc3{
+		width:45%;
+	}
+	.snap1{
+display:none;
+}
+	.msg {
+	        width: 494px;
+    height: 33px;
+    font-family: Lato;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 600;
+    /* text-align: left; */
+    float: left;
+    line-height: 20px;
+    margin-top: 140px;
+    margin-left: 22%;
+    text-indent: 10px;
+}
+
+.error {
+	        width: 90%;
+    height: 364px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_Error_Page_900.png) center no-repeat;
+    margin: 0 6%;
+}
+.snap {
+	display:block;
+	    font-family: Lato;
+    color: #404040;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.align {
+	        float: left;
+    margin-left: 38%;
+    margin-top: 52px;
+}
+}
+
+
+@media screen and (min-width:1400px){
+.snap1{
+display:none;
+}
+	.error {
+	        width: 90%;
+    height: 364px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_Error_Page_900.png) center no-repeat;
+    margin: 0 12%;
+}
+}
+
+@media screen and (min-width:1500px){
+.snap1{
+display:none;
+}
+	.error {
+	        width: 90%;
+    height: 364px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_Error_Page_900.png) center no-repeat;
+    margin: 0 16%;
+}
+}
+
+@media screen and (min-width:1800px){
+.snap1{
+display:none;
+}
+	#bc3{
+		width:45%;
+	}
+	.snap1{
+display:none;
+}
+	.error {
+	        width: 90%;
+    height: 364px;
+    max-width: 1000px;
+    background: url(https://midwest-dental.com/wp-content/themes/midwest-2016/404_Error_Page_900.png) center no-repeat;
+    margin: 0 22%;
+}
+}
+/*Slider
+----------------------------------------------------*/
+#carousel, #carousel-tablet{
+	display:none;
+}
+#carousel h2, #carousel-tablet h2, #carousel-mobile h2{
+	text-align:left;
+}
+#advps_container3,#advps_container6,#advps_container7{
+	margin-bottom:45px;
+}
+.advs-slide{
+	padding-right:20px;
+}
+.advps-excerpt-three{
+	height:200px;
+	width:100%;
+}
+	.advs-title{
+		padding:0;
+		font-size:18px;
+		max-width:320px;
+		width:100%;
+	}
+		.advps-excerpt-three a{
+			color:#fff;
+			background:#f8971d;
+			text-decoration:none;
+			padding:7px 64px;
+			border-radius:15px;
+			display:inline-block;
+
+		}
+			.advps-excerpt-three a:hover{
+				background:	#ffbb65;
+				color:#fff;
+			}
+		.advps-excerpt-three .advs-title a{
+			background:none;
+			font-weight:500;
+			padding:0;
+			text-transform:none;
+		}
+.carouselExcerpt{
+	margin-bottom:25px;
+	position:absolute;
+	top:80px;
+	max-width:320px;
+}
+.carouselReadMore{
+	position:absolute;
+	bottom:0;
+}
+#advps_container3 .advps-slide p{
+	font-size:14px;
+	max-width:320px;
+	width:100%;
+}
+.bx-wrapper img{
+	height:auto;
+}
+.bx-wrapper{
+	padding-left:10px;
+}
+
+.advps-slide-container .bx-wrapper .bx-prev{
+	left:-40px;
+	background:url(images/css/carousel-left.png) no-repeat;
+	height:20px;
+	width:20px;
+}
+	.advps-slide-container .bx-wrapper .bx-prev:hover{
+		background-position:0;
+		left:-42px;
+	}
+.advps-slide-container .bx-wrapper .bx-next{
+	right:-40px;
+	background:url(images/css/carousel-right.png) no-repeat;
+	height:20px;
+	width:20px;
+}
+	.advps-slide-container .bx-wrapper .bx-next:hover{
+		background-position:0;
+		right:-42px;
+	}
+@media screen and (max-width:399px){
+	.bx-controls{
+		display:none;
+	}
+}
+@media screen and (min-width:600px){
+	#carousel-tablet{
+		display:block;
+		clear:left;
+	}
+	#carousel-mobile{
+		display:none;
+	}
+	.advps-slide-container{
+		width:100%;
+		padding:0 7%;
+	}
+	.advps-slide:nth-of-type(odd){
+		padding-right:10px;
+	}
+	.advps-slide:nth-of-type(even){
+		padding-right:10px;
+	}
+	.advps-slide{
+		margin-right:10px;
+	}
+}
+@media screen and (min-width:900px){
+	#carousel-tablet{
+		display:none;
+	}
+	#carousel{
+		display:block;
+	}
+	.advps-slide{
+		margin-right:10px;
+	}
+	.advps-slide:nth-of-type(odd),.advps-slide:nth-of-type(odd),.advps-slide:nth-of-type(even){
+		padding-right:0;
+	}
+	.advps-slide-container .bx-wrapper .bx-prev{
+		left:-40px;
+	}
+	.advps-slide-container .bx-wrapper .bx-next{
+		right:-30px;
+	}
+	#carousel .advps-slide-field-three img{
+		margin-right:0;
+	}
+	.advps-slide-field-three{
+		width:103%;
+	}
+}
+@media screen and (min-width:1180px){
+	#carousel{
+		margin-left:0;
+		margin-right:0;
+	}
+	.advps-slide-container{
+		margin:auto;
+		width:100%;
+		padding:0;
+	}
+	.bx-viewport{
+		margin-left:10px;
+	}
+	.advps-slide-container .bx-wrapper .bx-prev{
+		left:-4%;
+	}
+	.advps-slide-container .bx-wrapper .bx-next{
+		right:-4%;
+	}
+	.advps-slide{
+		margin-right:0;
+	}
+
+}
+
+/*Footer
+----------------------------------------------------*/
+#footer-bottom-mobile{
+	display:none;
+}
+footer.twentysixteen{
+	width:100%;
+	clear:both;
+	background:#006c56;
+	font-size:11px;
+	font-family: 'Lato';
+	border-top:3px solid #034638;
+	letter-spacing:.05em;
+}
+	footer a{
+		color:#fff;
+		text-decoration:none;
+	}
+		footer a:hover{
+			color:#fff;
+		}
+	footer li{
+		float:left;
+		width:15.9%;
+		text-align:center;
+		background: #034638;
+		margin-right:.9%;
+		list-style-type:none;
+	}
+		footer li:last-of-type{
+			margin-right:0;
+			clear:right;
+		}
+		footer li:hover{
+			background:#087a60;
+		}
+#footer-top ul,#footer-mid,#footer-bottom{
+	color:#fff;
+	max-width:1000px;
+	font-size:10px;
+	margin:auto;
+	clear:both;
+}
+
+#footer-top{
+	width:90%;
+	max-width:1000px;
+	height:41px;
+	margin:auto;
+	margin-top:27px;
+}
+	#footer-top a{
+		display:block;
+		line-height:34px;
+		height:100%;
+		width:100%;
+		font-size:12px;
+	}
+#footer-bottom{
+	width:90%;
+	max-width:1000px;
+	padding-top:27px;
+	margin-top:27px;
+	border-top:1px solid #034638;
+	padding-bottom:27px;
+}
+#footer-bottom p{
+	color:#fff;
+	font-size:10px;
+	float:left;
+	line-height:22px;
+	vertical-align:bottom;
+}
+#footer-bottom img{
+	width:auto;
+	height:auto;
+	padding-right:15px;
+	vertical-align:bottom;
+}
+#footer-bottom a img{
+	width:39px;
+	height:39px;
+	float:right;
+	padding-right:0;
+	margin-left:5px;
+}
+#searchform{
+	float:right;
+	max-width:100%;
+}
+	#searchform input[type="search"]{
+		background:#f4f4f4;
+		border-radius:3px;
+		border:none;
+		height:24px;
+		width:204px;
+		max-width:80%;
+		padding-left:12px;
+		font-size:11px;
+		color:#034638;
+	}
+		#searchform input[type="search"]::-webkit-input-placeholder {
+		   color:#034638;
+		}
+
+		#searchform input[type="search"]:-moz-placeholder { /* Firefox 18- */
+		   color:#034638;
+		}
+
+		#searchform input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
+		   color:#034638;
+		}
+
+		#searchform input[type="search"]:-ms-input-placeholder {
+		   color:#034638;
+		}
+	#searchform input[type="submit"]{
+		background:url(images/search-submit.png) no-repeat;
+		box-shadow:none;
+		position:relative;
+		margin-left:4px;
+	}
+#footer-bottom #la{
+	max-width:360px;
+	margin-top:20px;
+}
+#nd{
+	max-width:360px;
+	margin-top:20px;
+}
+	#nd a{
+		text-decoration:underline;
+	}
+@media screen and (min-width:850px){
+	#footer-bottom #la{
+		float:right;
+	}
+}
+@media screen and (max-width:960px){
+	#footer-top, #footer-bottom{
+		width:89%;
+	}
+}
+@media screen and (max-width:825px){
+	footer ul li{
+		width:31%;
+		margin-bottom:11px;
+		margin-right:11px
+	}
+		footer ul li:nth-of-type(3n){
+			margin-right:0;
+		}
+}
+@media screen and (maxi-width:600px){
+	#footer-top, #footer-bottom{
+		width:90%;
+		margin:auto;
+	}
+}
+@media screen and (max-width:580px){
+	.desktop{
+		display:none;
+	}
+	footer ul li, footer ul li:nth-of-type(3n){
+		width:49%;
+		margin-bottom:6px;
+		margin-right:6px;
+	}
+	footer ul li:nth-of-type(2n){
+		margin-right:0;
+	}
+	footer ul li a{
+		font-size:13px;
+	}
+	#separator{
+		bottom:237px;
+	}
+	footer, #footer-bottom-mobile img{
+		max-width:100%;
+	}
+
+}
+@media screen and (max-width:450px){
+	#footer-top, #footer-bottom{
+		width:94%;
+	}
+	footer span{
+		display:block;
+		padding-left:35px;
+	}
+		footer span.nowrap{
+			display:inline;
+			padding:0;
+		}
+}
+@media screen and (max-width:400px){
+	ul li, ul li:nth-of-type(3n){
+		margin-right:1%;
+	}
+	#mobile-menu-container{
+		line-height:25px;
+	}
+}
+
+#bc3 #wpsl-wrap{
+	margin-bottom:0;
+}
+#bc3 #wpsl-wrap #wpsl-result-list li{
+	border:none;
+	padding:0;
+}
+#wpsl-result-list #wpsl-stores, #wpsl-direction-details, #wpsl-gmap{
+	height:auto !important;
+}
+#wpsl-stores span{
+	display:inline;
+}
+#bc3 #wpsl-result-list{
+	width:100%;
+}
+#bc3 #wpsl-result-list li p{
+	margin-bottom:0;
+}
+#mobileLocs div div{
+	width:48%;
+	float:left;
+}
+#mobileLocs div div:last-of-type{
+	text-align:right;
+}
+
+
+/*11-28-2016 Cancellation/Rescheduling Pop-up
+---------------------------------------------------------------------*/
+/* CSS Document */
+
+#cancellation-popup{
+	display:none;
+	background:#f8971d;
+	color:#ffffff;
+	width:500px;
+	padding: 43px 75px 43px 53px;
+	position:fixed;
+	left:50%;
+	margin-left:-250px;
+	margin-top:150px;
+	z-index:500;
+}
+#cancellation-popup img{
+	float:left;
+	padding-right:52px;
+}
+#cancellation-popup div{
+}
+
+#cancel-phone{
+	text-decoration:underline;
+	color:#fff;
+}
+	#cancel-phone:hover{
+		color:#fff;
+	}
+#popup-fade{
+	top:0;
+	display:none;
+	height:100%;
+	width:100%;
+	position:fixed;
+	z-index:97;
+	background:#fff;
+	opacity:.7;
+}
+@media screen and (max-width:500px){
+	.align-center{
+		text-align:center;
+	}
+	#cancellation-popup{
+		position: fixed;
+		top: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 90%;
+		padding: 32px 16px;
+		margin-left:0;
+		margin-top:0;
+		z-index: 99;
+	}
+		#cancellation-popup img{
+			float:none;
+			padding-right:0;
+		}
+}
+/*1-27-2017 Header Update*/
+/*New Header ---------------------------------------------------*/
+header{
+	text-align:center;
+}
+header img {
+    float: none;
+}
+header a:hover {
+    border-bottom: none;
+}
+.main-link{
+	vertical-align:text-top;
+}
+#mobile-loc-container{
+	float:right;
+	display:block;
+}
+	#mobile-loc-container img{
+		width:auto;
+	}
+#close-menu{
+	display:none;
+}
+#mobile-menu, .menu-mobile-menu-container, #menu-mobile-menu{
+	height:100%;
+	opacity:.99;
+}
+#mobile-breadcrumb #mobile-zip,#mobile-breadcrumb div {
+	max-width:1000px;
+	width:89%;
+	margin:9px auto;
+}
+@media screen and (max-width: 899px){
+	#mobile-menu-container img {
+		float: left;
+		margin: 7px 0 0 5px;
+		width: auto;
+	}
+	#mobile-menu-container {
+		display: block;
+		position: relative;
+		right: 0;
+		color: #006c56;
+		font-size: 18px;
+		text-align: right;
+		line-height: 32px;
+		cursor: pointer;
+		z-index: 99;
+		width:43px;
+		float:left;
+	}
+	#mobile-menu a {
+		display: block;
+		background: #006a52;
+		color: #fff;
+		font-size: 17px;
+		line-height: 44px;
+		width: 100%;
+		padding-right: 5.5%;
+		text-align: center;
+	}
+}
+@media screen and (min-width:900px){
+	#mobile-loc-container{
+		display:none;
+	}
+	header{
+		text-align:left;
+	}
+	header li a{
+		position:relative;
+	}
+	header li a:after {
+		content: '';
+		height: 3px;
+		width: 0;
+		background: transparent;
+		transition: width .3s ease, background-color .3s ease;
+	}
+	header li a:hover:after {
+		position: absolute;
+	  width: 100%;
+	  height: 2px;
+	  bottom: 0;
+	  left: 0;
+		background: #006a52;
+	}
+}
+
+	/*Animated Hamburger Menu--------------------------------------------*/
+		.c-hamburger {
+		  display: block;
+		  position: relative;
+		  overflow: hidden;
+		  margin: 0;
+		  padding: 0;
+		  width: 45px;
+		  height: 45px;
+		  font-size: 0;
+		  text-indent: -9999px;
+		  appearance: none;
+		  box-shadow: none;
+		  border-radius: none;
+		  border: none;
+		  cursor: pointer;
+		  transition: background 0.3s;
+		}
+
+		.c-hamburger:focus {
+		  outline: none;
+		}
+		.c-hamburger span {
+		  display: block;
+		  position: absolute;
+		  top: 15px;
+		  height: 2px;
+		  width:100%;
+		  background: #006c56;
+		}
+
+		.c-hamburger span::before,
+		.c-hamburger span::after {
+		  position: absolute;
+		  display: block;
+		  left: 0;
+		  width: 100%;
+		  height: 2px;
+		  background-color: #006c56;
+		  content: "";
+		}
+
+		.c-hamburger span::before {
+		  top: -10px;
+		}
+
+		.c-hamburger span::after {
+		  bottom: -10px;
+		}
+
+		.c-hamburger-htx span {
+		  transition: background 0s 0.3s;
+		}
+
+		.c-hamburger-htx span::before,
+		.c-hamburger-htx span::after {
+		  transition-duration: 0.3s, 0.3s;
+		  transition-delay: 0.3s, 0s;
+		}
+
+		.c-hamburger-htx span::before {
+		  transition-property: top, transform;
+		}
+
+		.c-hamburger-htx span::after {
+		  transition-property: bottom, transform;
+		}
+
+		/* active state, i.e. menu open */
+
+		.c-hamburger-htx.is-active span {
+		  background: none;
+		}
+
+		.c-hamburger-htx.is-active span::before {
+		  top: 0;
+		  transform: rotate(45deg);
+		}
+
+		.c-hamburger-htx.is-active span::after {
+		  bottom: 0;
+		  transform: rotate(-45deg);
+		}
+
+		.c-hamburger-htx.is-active span::before,
+		.c-hamburger-htx.is-active span::after {
+		  transition-delay: 0s, 0.3s;
+		}
+	/*End Animated Hamburger Menu-----------------------------------------*/
+/*End New Header----------------------------------------------*/
+
+/*Calendar Size 2-15-17-----------------------------*/
+#ui-datepicker-div{
+	width:340px;
+	height:340px;
+	max-width:100%;
+}
+.ui-datepicker-calendar{
+	width:100%;
+	height:262px;
+}
+
+/*Mobile Banner ------------------------------------*/
+.banner-mobile{
+	display:none;
+}
+@media screen and (min-width:400px){
+	.banner-tiny{
+		display:none;
+	}
+	.banner-mobile{
+		display:block;
+	}
+}
+@media screen and (min-width:600px){
+	.banner-mobile{
+		display:none;
+	}
+}
+
+/* Error bar 3-20-2017
+------------------------------------*/
+#error-bar{
+	display:none;
+	background:#C70000;
+	color:#fff;
+	font-size:18px;
+	padding:20px;
+	text-align:center;
+}
+	#error-bar p{
+		display:block;
+		max-width:1000px;
+		margin:auto;
+	}

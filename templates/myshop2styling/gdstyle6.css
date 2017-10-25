@@ -1,0 +1,275 @@
+html{
+	height:100%;
+}
+body{
+	font-family:'Lato';
+	font-size:14px;
+	line-height:20px;
+	letter-spacing:.55px;
+	color:#575757;
+	height:100%;
+}
+h1{
+	font-size:28px;
+	line-height:35px;
+	color:#006c56;
+	text-align:center;
+	font-weight:500;
+	margin:35px 0 19px 0;
+}
+h1 p{
+    font-size:11px;
+    line-height:11px;
+    padding:8px 0 10px 0;
+}
+h2{
+color:#006c56;
+text-align:center;
+margin-bottom:50px;
+margin-top:35px;
+}
+h3{
+color:#006c56;
+text-transform:uppercase;
+font-size:18px;
+margin-bottom:17px;
+}
+input[type="textbox"], input[type="tel"], input[type="email"]{
+    display:block;
+    width:100%;
+    color:#575757;
+    font-size:14px;
+    font-family:'Lato';
+    letter-spacing:.55px;
+    padding:2px;
+    border:none;
+}
+input[type="radio"]{
+    display:none;
+}
+    input[type="radio"]:last-of-type + label{
+        margin-right:0;
+    }
+input:checked + label div{
+    background:url(images/css/box-checked.png);
+    background-size:15px 15px;
+}
+label div{
+    display:inline-block;
+    background:url(images/css/box-unchecked.png);
+    width:15px;
+    height:15px;
+}
+    label div:hover{
+        background:url(images/css/box-hover.png);
+    }
+    label[for="age"]{
+        display:block;
+    }
+textarea{
+    width:100%;
+    height:63px;
+    color:#575757;
+    font-family: 'Lato';
+    letter-spacing:.55px;
+}
+#appointment input[type="submit"]{
+    border:none;
+    background:url(images/css/submit-form.png) left 31px top no-repeat, #f8971d;
+    color:#fff;
+    font-family:'Lato';
+    font-size:14px;
+    letter-spacing:.55px;
+    float:right;
+    padding: 5px 38px 19px 81px;
+    border-radius: 0 0 15px 15px;
+}
+    #appointment input[type="submit"]:hover{
+        text-decoration:underline;
+        cursor:pointer;
+    }
+select{
+display:block;
+width:100%;
+min-height:22px;
+color:#575757;
+font-family:'Lato';
+letter-spacing:.55px;
+border:0;
+padding:1px;
+font-size:14px;
+}
+.form-section select{
+    height:22px;
+}
+option{
+    color:#575757;
+    font-family:'Lato';
+    letter-spacing:.55px;
+}
+@media screen and (min-width:900px){
+header{
+    text-align:left;
+}
+header li a{
+    position:relative;
+}
+header li a:after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+}
+header li a:hover:after {
+    position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+    background: #006a52;
+}
+.form-section{
+    width:31%;
+    margin-right:4%;
+    float:left;
+}
+    .form-section:nth-of-type(odd){
+        margin-right:3%;
+    }
+    .form-section:nth-of-type(3){
+        margin-right:0;
+    }
+.form-section:nth-of-type(4){
+    float:right;
+    margin-right:0;
+}
+#appointment textarea{
+    height:180px;
+}
+}
+
+
+/*Header
+----------------------------------------------------*/
+header{
+position:relative;
+width:90%;
+max-width:1000px;
+margin:auto;
+height:53px;
+padding-top:17px;
+line-height:32px;
+}
+header .mobile{
+display:none;
+}
+header img{
+float:left;
+max-width:200px;
+}
+header ul{
+float:right;
+}
+header li{
+    display:inline;
+    margin-left:40px;
+}
+header li:first-of-type{
+    margin:0;
+}
+header a{
+color:#575757;
+text-decoration:none;
+font-size:16px;
+}
+header a:hover{
+    color:#007161;
+    padding-bottom:5px;
+    border-bottom:2px solid #007161;
+}
+#mobile-menu{
+display:none;
+position:absolute;
+width:100%;
+top:74px;
+z-index:99;
+}
+header a{
+    font-size:16px;
+}
+header li{
+    margin-left:30px;
+}
+}
+
+
+.form-wrapper{
+    padding: 0 17px 25px 17px;
+    background:#f8971d;
+}
+.form-wrapper .column{
+    background:none;
+    margin:0;
+}
+@media screen and (min-width:400px){
+	#mobile-dropdown-form{
+		width:100%;
+		margin-left:0%;
+	}.form-wrapper .column{
+    background:none;
+    margin:0;
+}
+
+}
+
+@media screen and (min-width:600px){
+        h2{
+            font-size:28px;
+        }
+        img{
+            max-width:100%;
+        }
+    .form-wrapper .column.half{
+		width:47.5%;
+	}
+		.form-wrapper .column.half:first-of-type{
+			margin-right:5%;
+		}
+
+    .form-section{
+        padding-top:25px;
+        text-align:left;
+    }
+        .form-section:last-of-type{
+            padding-bottom:25px;
+        }
+        .form-section select{
+    		height:22px;
+    	}
+
+    .form-section:last-of-type{
+        padding-bottom:0;
+    }
+    textarea{
+        height:200px;
+    }
+}
+@media screen and (max-width:350px){
+    textarea{
+		width:100%;
+		height:63px;
+		color:#575757;
+		font-family: 'Lato';
+		letter-spacing:.55px;
+	}
+
+}
+@media screen and (min-width:400px){
+	.banner-tiny{
+		display:none;
+	}
+	.banner-mobile{
+		display:block;
+	}
+}
