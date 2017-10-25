@@ -6,8 +6,11 @@ It takes the new item the user types in the input box and adds it to a horizonta
 and when the user clicks 'email my list', this project sends an email to the email address
 typed in by the user in the RequestSendMail form.The message would be the shopping list she
 had created using this Project(application). The email to the user would be sent FROM the email
-address hard-coded into emailer.py file NOT from a email address supplid as parameter.
+address"gapp2017falloct@gmail.com" hard-coded into emailer.py file NOT from a email address supplied as parameter.
+Matthew219 USername forga pp
 
+Client secret : JpSqDhfsluUEv_R9juFWFgpU
+Client ID : 371114402784-hkeq57pl0gj0vamhplmuaehcfjdtqeqt.apps.googleusercontent.com	 
 
 <!--  9:11 AM 10/17/2017  -->
 =======
